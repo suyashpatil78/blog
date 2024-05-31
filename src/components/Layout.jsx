@@ -124,7 +124,7 @@ const Layout = ({ location, children }) => {
 				</Button>
 			</header>
 			<main>{children}</main>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 };

@@ -1,0 +1,42 @@
+{
+	"eslint.autoFixOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.tslint": "explicit",
+		"source.fixAll.eslint": "explicit"
+	},
+	"editor.formatOnSave": true,
+	"cSpell.enabledLanguageIds": [
+		"asciidoc",
+		"c",
+		"cpp",
+		"csharp",
+		"css",
+		"git-commit",
+		"go",
+		"handlebars",
+		"html",
+		"jade",
+		"java",
+		"javascript",
+		"javascriptreact",
+		"json",
+		"jsonc",
+		"latex",
+		"less",
+		"markdown",
+		"php",
+		"plaintext",
+		"pug",
+		"python",
+		"restructuredtext",
+		"rust",
+		"scala",
+		"scss",
+		"text",
+		"typescript",
+		"typescriptreact",
+		"yaml",
+		"yml"
+	],
+	"editor.tabSize": 2
+}

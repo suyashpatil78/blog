@@ -34,7 +34,7 @@ export default function debounce(func, wait) {
 
 - <strong>Closure</strong>: The debounce function returns a new function that retains access to the timeoutId variable, even after the debounce function has finished executing. This is achieved through closures.
 
-- <strong>Clearing the Timeout<strong>: Every time the returned function is invoked, it first clears any existing timeout using clearTimeout(timeoutId). This ensures that the previous function execution is canceled.
+- <strong>Clearing the Timeout</strong>: Every time the returned function is invoked, it first clears any existing timeout using clearTimeout(timeoutId). This ensures that the previous function execution is canceled.
 
 - <strong>Setting a New Timeout</strong>: A new timeout is set using setTimeout(func, wait). The function passed to setTimeout is the original function that we want to debounce, and the wait parameter specifies the delay in milliseconds.
 

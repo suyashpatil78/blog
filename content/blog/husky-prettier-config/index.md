@@ -74,4 +74,4 @@ This script runs `lint-staged` before each commit, ensuring that Prettier is run
 ### Conclusion
 
 By configuring Husky, lint-staged, and Prettier in your project, you can automate code quality checks and ensure that your codebase remains clean and consistent. These tools help catch errors early, enforce coding standards, and make collaboration easier by ensuring that all team members follow the same coding conventions. By integrating these tools into your workflow, you can save time and effort while maintaining a high level of code quality.
-```
+

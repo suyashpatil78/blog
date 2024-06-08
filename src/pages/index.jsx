@@ -602,7 +602,7 @@ table {
 }
 
 body {
-  background-color: #f6f9fc;
+  background-color: white;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: "pnum";

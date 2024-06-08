@@ -64,7 +64,6 @@ function Seo({ description, lang, meta, title, ogImage: ogImageProp }) {
 				}
 			].concat(meta)}
 		>
-			<meta property="og:site_name" content="SuyashPatil"></meta>
 			<script
 				src="https://js.sentry-cdn.com/2f3037e5c8e616140a6864aa7890c6e1.min.js"
 				crossorigin="anonymous"

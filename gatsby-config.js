@@ -3,9 +3,9 @@ module.exports = {
 		bio: 'Eat 🍔 Sleep 😴 Code 💻 Repeat 🔁',
 		title: `Suyash Patil`,
 		author: `Suyash Patil`,
-		description: `Personal blog of Suyash Patil`,
+		description: `Personal website of Suyash Patil`,
 		domain: 'suyashpatil.me',
-		siteUrl: `https://blogs.suyashpatil.me`,
+		siteUrl: `https://suyashpatil.me`,
 		repo: 'suyashpatil78/blog',
 		social: {
 			website: 'https://suyashpatil.me',

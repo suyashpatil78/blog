@@ -78,8 +78,6 @@ const Sidebar = () => {
 					as="a"
 					circular
 					href={social.website}
-					target="_blank"
-					rel="noopener noreferrer"
 				>
 					<FaGlobe />
 				</Button>

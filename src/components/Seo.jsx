@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function Seo({ description, lang, meta, title, ogImage: ogImageProp }) {
+
 	const { site, ogImageDefault } = useStaticQuery(
 		graphql`
 			query {
@@ -62,7 +63,34 @@ function Seo({ description, lang, meta, title, ogImage: ogImageProp }) {
 					content: ogImage,
 				}
 			].concat(meta)}
-		></Helmet>
+		>
+			<meta property="og:site_name" content="SuyashPatil"></meta>
+			<script
+				src="https://js.sentry-cdn.com/2f3037e5c8e616140a6864aa7890c6e1.min.js"
+				crossorigin="anonymous"
+			></script>
+			<script>
+				{`
+					window.sentryOnLoad = function () {
+						Sentry.init({
+							tracesSampleRate: 1.0,
+							replaysSessionSampleRate: 0.1,
+							replaysOnErrorSampleRate: 1.0,
+						});
+					}
+				`}
+			</script>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-367953D6BZ"></script>
+			<script>
+				{`
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+
+					gtag('config', 'G-367953D6BZ');
+				`}
+			</script>
+		</Helmet>
 	);
 }
 

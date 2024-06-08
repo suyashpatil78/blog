@@ -65,10 +65,11 @@ function Seo({ description, lang, meta, title, ogImage: ogImageProp }) {
 			].concat(meta)}
 		>
 			<script
+				async
 				src="https://js.sentry-cdn.com/2f3037e5c8e616140a6864aa7890c6e1.min.js"
 				crossorigin="anonymous"
 			></script>
-			<script>
+			<script async>
 				{`
 					window.sentryOnLoad = function () {
 						Sentry.init({
@@ -80,7 +81,7 @@ function Seo({ description, lang, meta, title, ogImage: ogImageProp }) {
 				`}
 			</script>
 			<script async src="https://www.googletagmanager.com/gtag/js?id=G-367953D6BZ"></script>
-			<script>
+			<script async>
 				{`
 					window.dataLayer = window.dataLayer || [];
 					function gtag(){dataLayer.push(arguments);}

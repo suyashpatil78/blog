@@ -1,13 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { object } from 'prop-types';
-import Link from '../assets/link.svg';
-import Github from '../assets/github.svg';
-import WheelerJS from '../assets/wheelerjs.gif';
-import EventFind from '../assets/eventfind.webp';
 
 import ThemeProvider from '../components/ThemeProvider';
 import Seo from '../components/Seo';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -414,7 +411,6 @@ table {
   line-height: 38px;
   color: #525f7f;
   margin-top: 0;
-  margin-bottom: 35px
 }
 
 .projects-container .project-card .project-content .project-links {
@@ -731,8 +727,7 @@ a:hover {
                 <h2 id="projects" className="section-title">Projects</h2>
                 <div className="projects-container">
                   <div className="project-card">
-                    <img alt="eventfind" className="project-image" style={{ maxWidth: '32%' }}
-                      src={EventFind} />
+                    <StaticImage alt="eventfind" className="project-image" style={{ maxWidth: '32%' }} src="../assets/eventfind.webp" />
                     <div className="project-background"></div>
                     <div className="project-content">
                       <h3>EventFind</h3>
@@ -743,11 +738,11 @@ a:hover {
                       <div className="project-links">
                         <a href="https://youtu.be/hEH8tLuaDHQ" rel="noopener" target="_blank" className="project-link" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
                           Video Demo
-                          <img alt="demo" src={Link} width="16px" height="14px" />
+                          <StaticImage alt="demo" src="../assets/link.svg" width={16} height={14} />
                         </a>
                         <a href="https://github.com/suyashpatil78/eventfind" rel="noopener" target="_blank" className="project-link secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
                           Source Code
-                          <img alt="github" src={Github} width="16px" height="14px" />
+                          <StaticImage alt="github" src="../assets/github.svg" width={16} height={14} />
                         </a>
                       </div>
                     </div>
@@ -755,8 +750,8 @@ a:hover {
                 </div>
                 <div className="projects-container">
                   <div className="project-card">
-                    <img alt="wheelerjs" className="project-image"
-                      src={WheelerJS} style={{ width: "38%", left: "-6%" }} />
+                    <StaticImage alt="wheelerjs" className="project-image"
+                      src="../assets/wheelerjs.png" style={{ width: "38%", left: "-6%" }} />
                     <div className="project-background"></div>
                     <div className="project-content">
                       <h3>WheelerJS</h3>
@@ -767,11 +762,11 @@ a:hover {
                       <div className="project-links">
                         <a href="https://wheelerjs.suyashpatil.me/" rel="noopener" target="_blank" className="project-link" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
                           Live Demo
-                          <img alt="demo" src={Link} width="16px" height="14px" />
+                          <StaticImage alt="demo" src="../assets/link.svg" width={16} height={14} />
                         </a>
                         <a href="https://github.com/suyashpatil78/wheelerjs" rel="noopener" target="_blank" className="project-link secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
                           Source Code
-                          <img alt="github" src={Github} width="16px" height="14px" />
+                          <StaticImage alt="github" src="../assets/github.svg" width={16} height={14} />
                         </a>
                       </div>
                     </div>
@@ -782,9 +777,10 @@ a:hover {
                   <div className="project-card">
                     <div className="project-content" style={{ padding: '30px', width: '90%' }}>
                       <div style={{ display: 'flex', flexDirection: 'row' }}>
-                        <img alt="fyle logo" style={{ paddingTop: '8px', paddingRight: '10px' }} width="25px" height="25px" src="https://play-lh.googleusercontent.com/6b1OtR4-trPrG16IioeS2VMIeonOtDIMn1w2k5PTm3ORDxduYvF4MDLB_k2vZsSfTQk" />
                         <div>
-                          <h3 style={{ marginBottom: '10px' }}>Fyle</h3>
+                          <h3>
+                            <img alt="fyle logo" style={{ paddingTop: '8px', paddingRight: '10px' }} width={96} height={72} src="https://www.fylehq.com/assets/images/svg-images/fylelogo.svg" />
+                          </h3>
                           <p>March 2023 - Present</p>
                         </div>
                       </div>

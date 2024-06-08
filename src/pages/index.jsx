@@ -7,17 +7,15 @@ import WheelerJS from '../assets/wheelerjs.gif';
 import EventFind from '../assets/eventfind.webp';
 
 import ThemeProvider from '../components/ThemeProvider';
-import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import '../styles/index.css';
 
 const HomePage = ({ data, location }) => {
-	const siteTitle = data.site.siteMetadata.title;
+  const siteTitle = data.site.siteMetadata.title;
 
-	return (
-		<React.Fragment>
-			<style>
-				{`
+  return (
+    <React.Fragment>
+      <style>
+        {`
 						a,
 abbr,
 acronym,
@@ -165,7 +163,7 @@ table {
   display: flex;
   justify-content: space-around;
   width: 286px;
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif;
   font-size: 1.2em;
   margin-top: 40px
 }
@@ -221,7 +219,7 @@ table {
 }
 
 .hero-container .hero-title {
-  font-family: Monaco, Consolas, Lucida Console, monospace;
+  font-family: 'Zilla Slab', Lucida Console, monospace;
   font-size: 3.5em;
   color: #747fe0
 }
@@ -242,9 +240,9 @@ table {
 }
 
 .hero-container .hero-description {
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif;
   font-weight: 200;
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 40px;
   color: #525f7f;
   margin: 80px 0
@@ -299,7 +297,7 @@ table {
   background-color: #3B3D4F;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
-  font-family: Monaco, Consolas, Lucida Console, monospace
+	font-family: 'Cascadia Code';
 }
 
 .about-container .terminal .terminal-window a {
@@ -346,7 +344,7 @@ table {
 
 .projects-container {
   margin: 0 auto;
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif
+  font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif
 }
 
 .projects-container .project-card {
@@ -437,7 +435,7 @@ table {
   letter-spacing: .025em;
   text-decoration: none;
   transition: all .15s ease;
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif;
   font-size: .9em;
   font-weight: 600;
   box-sizing: border-box;
@@ -458,7 +456,7 @@ table {
     letter-spacing: .025em;
     text-decoration: none;
     transition: all .15s ease;
-    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif;
     font-size: .9em;
     font-weight: 600;
     box-sizing: border-box;
@@ -503,13 +501,13 @@ table {
   padding: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif;
   font-size: .85em;
   color: #5A5D7A;
 }
 
 .contact-links {
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif;
   font-size: 1.2em;
   text-align: center;
   padding-bottom: 200px;
@@ -584,21 +582,10 @@ table {
   margin: 0 auto;
   font-size: .8em;
   line-height: 1.5em;
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif;
   text-align: center;
   padding-bottom: 50px;
   color: #525f7f
-}
-
-@font-face {
-  font-family: Monaco;
-  src: url("https://db.onlinewebfonts.com/t/0ac87e2140960beafff078e81f279eef.eot");
-  src: url("https://db.onlinewebfonts.com/t/0ac87e2140960beafff078e81f279eef.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/0ac87e2140960beafff078e81f279eef.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/0ac87e2140960beafff078e81f279eef.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/0ac87e2140960beafff078e81f279eef.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/0ac87e2140960beafff078e81f279eef.svg#Monaco Regular")format("svg");
-  font-display: swap;
 }
 
 body {
@@ -650,7 +637,7 @@ a:hover {
 
 .section-title {
   color: #525f7f;
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: 'Zilla Slab', Open Sans, Segoe UI, sans-serif;
   font-weight: 500;
   font-size: 1.5em;
   text-align: center;
@@ -674,170 +661,171 @@ a:hover {
   width: 50px
 }
 					`}
-			</style>
-			<Seo title="Home" />
-			<div>
-				<div className="container-lg">
-					<div>
-						<div className="home-container">
-							<div className="navbar-container">
-								<nav className="navbar">
-									<a href="#projects">Projects</a>
-									<a href="#experience">Experience</a>
-									<a href="https://suyashpatil.me/blog">Blogs</a>
-								</nav>
-							</div>
-							<div className="hero-container">
-								<div className="hero-title">
-									Suyash Patil
-									<span>
-										&nbsp;
-									</span>
-								</div>
-								<div className="hero-description">I am currently working as Member of Technical Staff at <a href="https://fylehq.com"> Fyle</a>. I love to build software using different technologies. Currently I am learning functional programming and a bit of system design and patterns.
-									<br />
-									I also write about JavaScript, React, Angular and many other things. To know more about me, check out my <a href="https://blogs.suyashpatil.me">blogs</a>.
-									<br />
-								</div>
-							</div>
-							<div className="about-container">
-								<div className="terminal">
-									<div className="terminal-header">
-										<div className="header-button red"></div>
-										<div className="header-button yellow"></div>
-										<div className="header-button green"></div>
-									</div>
-									<div className="terminal-window">
-										<div>
-											<div className="statement">
-												<div className="input-statement">Suyash.contactInfo</div>
-												<div className="return-statement">["<a
-													href="mailto:patilsuyash545@gmail.com">patilsuyash545@gmail.com</a>", "<a
-														rel="noopener"
-														href="https://www.linkedin.com/in/suyash-patil">LinkedIn</a>",
-													"<a rel="noopener" href="https://github.com/suyashpatil78">GitHub</a>", "<a
-														href="https://stackoverflow.com/users/20093123/suyashpatil">Stackoverflow</a>", "<a
-															href="https://www.quora.com/profile/Suyash-Patil-33">Quora</a>"]</div>
-											</div>
-											<div className="statement">
-												<div className="input-statement">Suyash.interests</div>
-												<div className="return-statement">["tech blogs", "chess", "cricket"]</div>
-											</div>
-											<div className="statement">
-												<div className="input-statement">Suyash.education</div>
-												<div className="return-statement">"B.Tech. Electronics and Communication Engineering -
-													Ujjain Engineering College, Madhya Pradesh, India"</div>
-											</div>
-											<div className="statement">
-												<div className="input-statement">Suyash.skills</div>
-												<div className="return-statement">["Sass", "JavaScript", "TypeScript",
-													"React", "Angular", "Redux", "git"]</div>
-											</div>
-											<div className="statement">
-												<div className="input-statement"><span>&nbsp;</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<h2 id="projects" className="section-title">Projects</h2>
-							<div className="projects-container">
-								<div className="project-card">
-									<img alt="eventfind" className="project-image" style={{ maxWidth: '32%' }}
-										src={EventFind} />
-									<div className="project-background"></div>
-									<div className="project-content">
-										<h3>EventFind</h3>
-										<p>
-											A cross-platform mobile application developed to create and locate an event happening nearby you built using Ionic and Angular.
-										</p>
-										<div className="project-skills"><span className="project-skill">Ionic</span><span className="project-skill">Angular</span><span className="project-skill">TypeScript</span></div>
-										<div className="project-links">
-											<a href="https://youtu.be/hEH8tLuaDHQ" rel="noopener" target="_blank" className="project-link" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
-												Video Demo
-												<img alt="demo" src={Link} width="16px" height="14px" />
-											</a>
-											<a href="https://github.com/suyashpatil78/eventfind" rel="noopener" target="_blank" className="project-link secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
-												Source Code
-												<img alt="github" src={Github} width="16px" height="14px" />
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="projects-container">
-								<div className="project-card">
-									<img alt="wheelerjs" className="project-image"
-										src={WheelerJS} style={{ width: "38%", left: "-6%" }} />
-									<div className="project-background"></div>
-									<div className="project-content">
-										<h3>WheelerJS</h3>
-										<p>
-											A zero-dependency NPM package for showing animated loader in ReactJS with package size of just 7.9kB having more than 4k+ downloads.
-										</p>
-										<div className="project-skills"><span className="project-skill">React</span><span className="project-skill">TypeScript</span></div>
-										<div className="project-links">
-											<a href="https://wheelerjs.suyashpatil.me/" rel="noopener" target="_blank" className="project-link" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
-												Live Demo
-												<img alt="demo" src={Link} width="16px" height="14px" />
-											</a>
-											<a href="https://github.com/suyashpatil78/wheelerjs" rel="noopener" target="_blank" className="project-link secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
-												Source Code
-												<img alt="github" src={Github} width="16px" height="14px" />
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<h2 id="experience" className="section-title">Work Experience</h2>
-							<div className="projects-container">
-								<div className="project-card">
-									<div className="project-content" style={{ padding: '30px', width: '90%' }}>
-										<div style={{ display: 'flex', flexDirection: 'row' }}>
-											<img alt="fyle logo" style={{ paddingTop: '8px', paddingRight: '10px' }} width="25px" height="25px" src="https://play-lh.googleusercontent.com/6b1OtR4-trPrG16IioeS2VMIeonOtDIMn1w2k5PTm3ORDxduYvF4MDLB_k2vZsSfTQk" />
-											<div>
-												<h3 style={{ marginBottom: '10px' }}>Fyle</h3>
-												<p>March 2023 - Present</p>
-											</div>
-										</div>
+      </style>
+      <Seo title="Home" />
+      <ThemeProvider>
+        <div>
+          <div className="container-lg">
+            <div>
+              <div className="home-container">
+                <div className="navbar-container">
+                  <nav className="navbar">
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="https://suyashpatil.me/blog">Blogs</a>
+                  </nav>
+                </div>
+                <div className="hero-container">
+                  <div className="hero-title">
+                    Suyash Patil
+                  </div>
+                  <div className="hero-description">I am currently working as Member of Technical Staff at <a href="https://fylehq.com"> Fyle</a>. I love to build software using different technologies. Currently I am learning functional programming and a bit of system design and patterns.
+                    <br />
+                    I also write about JavaScript, React, Angular and many other things. To know more about me, check out my <a href="https://suyashpatil.me/blog">blogs</a>.
+                    <br />
+                  </div>
+                </div>
+                <div className="about-container">
+                  <div className="terminal">
+                    <div className="terminal-header">
+                      <div className="header-button red"></div>
+                      <div className="header-button yellow"></div>
+                      <div className="header-button green"></div>
+                    </div>
+                    <div className="terminal-window">
+                      <code>
+                        <div>
+                          <div className="statement">
+                            <div className="input-statement">Suyash.contactInfo</div>
+                            <div className="return-statement">["<a
+                              href="mailto:patilsuyash545@gmail.com">patilsuyash545@gmail.com</a>", "<a
+                                rel="noopener"
+                                href="https://www.linkedin.com/in/suyash-patil">LinkedIn</a>",
+                              "<a rel="noopener" href="https://github.com/suyashpatil78">GitHub</a>", "<a
+                                href="https://stackoverflow.com/users/20093123/suyashpatil">Stackoverflow</a>", "<a
+                                  href="https://www.quora.com/profile/Suyash-Patil-33">Quora</a>"]</div>
+                          </div>
+                          <div className="statement">
+                            <div className="input-statement">Suyash.interests</div>
+                            <div className="return-statement">["tech blogs", "chess", "cricket"]</div>
+                          </div>
+                          <div className="statement">
+                            <div className="input-statement">Suyash.education</div>
+                            <div className="return-statement">"B.Tech. Electronics and Communication Engineering -
+                              Ujjain Engineering College, Madhya Pradesh, India"</div>
+                          </div>
+                          <div className="statement">
+                            <div className="input-statement">Suyash.skills</div>
+                            <div className="return-statement">["Sass", "JavaScript", "TypeScript",
+                              "React", "Angular", "Redux", "git"]</div>
+                          </div>
+                          <div className="statement">
+                            <div className="input-statement"><span>&nbsp;</span>
+                            </div>
+                          </div>
+                        </div>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+                <h2 id="projects" className="section-title">Projects</h2>
+                <div className="projects-container">
+                  <div className="project-card">
+                    <img alt="eventfind" className="project-image" style={{ maxWidth: '32%' }}
+                      src={EventFind} />
+                    <div className="project-background"></div>
+                    <div className="project-content">
+                      <h3>EventFind</h3>
+                      <p style={{ fontSize: '1.2em' }}>
+                        A cross-platform mobile application developed to create and locate an event happening nearby you built using Ionic and Angular.
+                      </p>
+                      <div className="project-skills"><span className="project-skill">Ionic</span><span className="project-skill">Angular</span><span className="project-skill">TypeScript</span></div>
+                      <div className="project-links">
+                        <a href="https://youtu.be/hEH8tLuaDHQ" rel="noopener" target="_blank" className="project-link" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
+                          Video Demo
+                          <img alt="demo" src={Link} width="16px" height="14px" />
+                        </a>
+                        <a href="https://github.com/suyashpatil78/eventfind" rel="noopener" target="_blank" className="project-link secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
+                          Source Code
+                          <img alt="github" src={Github} width="16px" height="14px" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="projects-container">
+                  <div className="project-card">
+                    <img alt="wheelerjs" className="project-image"
+                      src={WheelerJS} style={{ width: "38%", left: "-6%" }} />
+                    <div className="project-background"></div>
+                    <div className="project-content">
+                      <h3>WheelerJS</h3>
+                      <p style={{ fontSize: '1.2em' }}>
+                        A zero-dependency NPM package for showing animated loader in ReactJS with package size of just 7.9kB having more than 4k+ downloads.
+                      </p>
+                      <div className="project-skills"><span className="project-skill">React</span><span className="project-skill">TypeScript</span></div>
+                      <div className="project-links">
+                        <a href="https://wheelerjs.suyashpatil.me/" rel="noopener" target="_blank" className="project-link" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
+                          Live Demo
+                          <img alt="demo" src={Link} width="16px" height="14px" />
+                        </a>
+                        <a href="https://github.com/suyashpatil78/wheelerjs" rel="noopener" target="_blank" className="project-link secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
+                          Source Code
+                          <img alt="github" src={Github} width="16px" height="14px" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h2 id="experience" className="section-title">Work Experience</h2>
+                <div className="projects-container">
+                  <div className="project-card">
+                    <div className="project-content" style={{ padding: '30px', width: '90%' }}>
+                      <div style={{ display: 'flex', flexDirection: 'row' }}>
+                        <img alt="fyle logo" style={{ paddingTop: '8px', paddingRight: '10px' }} width="25px" height="25px" src="https://play-lh.googleusercontent.com/6b1OtR4-trPrG16IioeS2VMIeonOtDIMn1w2k5PTm3ORDxduYvF4MDLB_k2vZsSfTQk" />
+                        <div>
+                          <h3 style={{ marginBottom: '10px' }}>Fyle</h3>
+                          <p>March 2023 - Present</p>
+                        </div>
+                      </div>
 
-										<p>
-											Currently working in the frontend team at Fyle.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div className="background"></div>
-							<h2 id="contact" className="section-title">Contact me!</h2>
-							<div className="contact-links">
-								<span>
-									<a rel="noopener" target="_blank" href="mailto:patilsuyash545@gmail.com">
-										patilsuyash545@gmail.com
-									</a>
-								</span>
-								<span>
-									<a rel="noopener" target="_blank" href="https://www.linkedin.com/in/suyash-patil">
-										LinkedIn
-									</a>
-								</span>
-								<span>
-									<a rel="noopener" target="_blank" href="https://github.com/suyashpatil78">
-										GitHub
-									</a>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</React.Fragment >
-	);
+                      <p style={{ fontSize: '1.2em' }}>
+                        Currently working in the frontend team at Fyle.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="background"></div>
+                <h2 id="contact" className="section-title">Contact me!</h2>
+                <div className="contact-links">
+                  <span>
+                    <a rel="noopener" target="_blank" href="mailto:patilsuyash545@gmail.com">
+                      patilsuyash545@gmail.com
+                    </a>
+                  </span>
+                  <span>
+                    <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/suyash-patil">
+                      LinkedIn
+                    </a>
+                  </span>
+                  <span>
+                    <a rel="noopener" target="_blank" href="https://github.com/suyashpatil78">
+                      GitHub
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ThemeProvider>
+    </React.Fragment >
+  );
 };
 
 HomePage.propTypes = {
-	data: object.isRequired,
-	location: object.isRequired,
+  data: object.isRequired,
+  location: object.isRequired,
 };
 
 export const pageQuery = graphql`

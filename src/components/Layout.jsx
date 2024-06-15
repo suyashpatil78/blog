@@ -49,7 +49,7 @@ const Layout = ({ location, children }) => {
 						display: 'inline-flex',
 						alignItems: 'flex-end',
 					}}
-					to="/"
+					to="/blog"
 				>
 					<FiTerminal css={terminalStyles} /> Suyash Blog
 				</Link>

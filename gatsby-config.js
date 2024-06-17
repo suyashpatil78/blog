@@ -3,7 +3,7 @@ module.exports = {
 		bio: 'Eat 🍔 Sleep 😴 Code 💻 Repeat 🔁',
 		title: `Suyash Patil`,
 		author: `Suyash Patil`,
-		description: `Personal website of Suyash Patil`,
+		description: `Software Engineer with a penchant for minimalistic design and optimizations. I have hands-on experience in developing applications using several javascript frameworks, like angular, react, react-native, ionic and managing & optimizing backend infrastructure including deployment, scalability, performance and efficiency`,
 		domain: 'suyashpatil.me',
 		siteUrl: `https://suyashpatil.me`,
 		repo: 'suyashpatil78/blog',

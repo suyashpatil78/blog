@@ -787,6 +787,28 @@ a:hover {
 
                       <p style={{ fontSize: '1.2em' }}>
                         Currently working in the frontend team at Fyle.
+                        <br />
+                        <br />
+                        <span style={{ fontWeight: 600 }}>Tech Stack:</span> Angular, TypeScript, Ionic, RxJS
+                      </p>
+                    </div>
+                  </div>
+                  <div className="project-card">
+                    <div className="project-content" style={{ padding: '30px', width: '90%' }}>
+                      <div style={{ display: 'flex', flexDirection: 'row' }}>
+                        <div>
+                          <h3>
+                            <img alt="supista logo" style={{ paddingTop: '8px', paddingRight: '10px' }} width={140} height={46} src="https://supista.com/_ipx/w_1080,q_75/%2F_next%2Fstatic%2Fmedia%2FSupista-Logo-WB.52c876c2.png?url=%2F_next%2Fstatic%2Fmedia%2FSupista-Logo-WB.52c876c2.png&w=1080&q=75" />
+                          </h3>
+                          <p>September 2023 - November 2023</p>
+                        </div>
+                      </div>
+
+                      <p style={{ fontSize: '1.2em' }}>
+                        Worked as a frontend developer intern at Supista.
+                        <br />
+                        <br />
+                        <span style={{ fontWeight: 600 }}>Tech Stack:</span> React, TypeScript, Material-UI
                       </p>
                     </div>
                   </div>

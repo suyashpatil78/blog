@@ -93,5 +93,11 @@ module.exports = {
 		},
 		'gatsby-plugin-catch-links',
 		'gatsby-plugin-sitemap',
+		{
+			resolve: `gatsby-plugin-google-adsense`,
+			options: {
+				publisherId: `ca-pub-7926071698481991`
+			},
+		},
 	],
 };

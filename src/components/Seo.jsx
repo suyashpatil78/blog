@@ -65,6 +65,10 @@ function Seo({ description, lang, meta, title, ogImage: ogImageProp }) {
 				{
 					name: 'keywords',
 					content: 'suyash patil, software engineer, web developer, full-stack developer, react developer, angular developer, ionic developer, react-native developer',
+				},
+				{
+					name: 'google-adsense-account',
+					content: 'ca-pub-7926071698481991'
 				}
 			].concat(meta)}
 		>
